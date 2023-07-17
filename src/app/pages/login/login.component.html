@@ -1,0 +1,25 @@
+<form [formGroup]="formLogin" (ngOnSubmit)="onSubmit()">
+  <div class="container">
+    <div class="user_container">
+      <label>Usuario *</label>
+      <input type="text" formControlName="user">
+      <div class="errors_container">
+        <div class="error_message">
+          Campo obligatorio.
+        </div>
+      </div>
+    </div>
+    <div class="password_container">
+      <label>Contraseña *</label>
+      <input type="password" formControlName="password">
+      <div class="errors_container">
+        <div class="error_message">
+          Campo obligatorio.
+        </div>
+      </div>
+    </div>
+    <div class="login_btn_cont">
+      <button class="login_btn" (click)="onSubmit()">Iniciar sesión</button>
+    </div>
+  </div>
+</form>
